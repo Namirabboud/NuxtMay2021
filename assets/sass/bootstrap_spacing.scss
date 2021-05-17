@@ -1,0 +1,20 @@
+.px-6{
+    padding-#{$start-direction}: ($spacer * 5) !important;
+    padding-#{$end-direction}: ($spacer * 5) !important;
+}
+
+.pl-6{
+    padding-#{$start-direction}: ($spacer * 5) !important;
+}
+
+.pt-6{
+    padding-top: ($spacer * 5) !important;
+}
+
+.pb-6{
+    padding-bottom: ($spacer * 5) !important;
+}
+
+.pr-6{
+    padding-right: ($spacer * 5) !important;
+}

@@ -1,0 +1,65 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+//borders
+@import 'borders';
+
+//colors
+@import 'colors';
+
+@import "bootstrap_spacing";
+
+@import "loader";
+
+@import "helpers";
+
+
+
+//menu bar
+.main-navbar{
+
+    > .navbar{
+        //transition: all ease-in-out .1s;
+    }
+    &.navbar-scroll{
+
+        padding-top: 63px;
+        > .navbar{
+            position: fixed;
+            transform: translate3d(0, -8px, 0);
+            top:0;
+            width: 100%;
+            z-index: 9;
+        }
+
+    }
+}
+
+//resume
+.resume-profile-picture{
+    max-width: 220px;
+}
+
+$expertise-width-nb: 30px;
+
+.expertise-nb{
+    width: $expertise-width-nb;
+}
+
+.exp-date{
+    min-width: 200px;
+}
+
+.expertise-body{
+    padding-#{$start-direction}: $expertise-width-nb;
+}
+
+
+
+//printing
+@media print {
+
+}
