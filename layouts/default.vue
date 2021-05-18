@@ -30,7 +30,7 @@ export default {
   },
 
   mounted () {
-    this.overlay = true
+    this.overlay = false
   },
 
   beforeDestroy () {
