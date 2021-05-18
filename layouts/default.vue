@@ -1,14 +1,49 @@
 <template>
   <v-app>
-    <div class="menu">
-      <menu-component></menu-component>
+
+    <div v-if="overlay">
+      this is some overlay
+    </div>
+    <div v-else>
+      <div class="menu">
+        <menu-component></menu-component>
+      </div>
+
+      <div class="pt-14">
+        <Nuxt />
+      </div>
     </div>
 
-    <div class="pt-14">
-      <Nuxt />
-    </div>
+
   </v-app>
 </template>
+
+<script>
+
+export default {
+  name: "DefaultLayout",
+
+  data: function(){
+    return {
+      overlay: null,
+    }
+  },
+
+  mounted () {
+    this.overlay = false
+  },
+
+  beforeDestroy () {
+  },
+
+  methods:{
+  },
+
+  components:{
+  }
+
+}
+</script>
 
 <style>
 html {
