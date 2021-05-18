@@ -25,12 +25,12 @@ export default {
 
   data: function(){
     return {
-      overlay: null,
+      overlay: true,
     }
   },
 
   mounted () {
-    this.overlay = false
+    this.overlay = true
   },
 
   beforeDestroy () {
