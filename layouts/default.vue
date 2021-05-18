@@ -1,9 +1,15 @@
 <template>
   <v-app>
 
-    <div v-if="overlay">
-      this is some overlay
+    <div v-if="overlay" class="blob-loader-container">
+      <div class="blob-loader-inner">
+        <div class="loader">
+          <div class="blob-1"></div>
+          <div class="blob-2"></div>
+        </div>
+      </div>
     </div>
+
     <div v-else>
       <div class="menu">
         <menu-component></menu-component>
@@ -13,7 +19,6 @@
         <Nuxt />
       </div>
     </div>
-
 
   </v-app>
 </template>
@@ -27,6 +32,10 @@ export default {
     return {
       overlay: true,
     }
+  },
+
+  beforeCreate() {
+    this.overlay = true;
   },
 
   mounted () {
