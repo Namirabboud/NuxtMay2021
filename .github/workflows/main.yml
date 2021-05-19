@@ -43,4 +43,4 @@ jobs:
         run: rsync -avz ./ ubuntu@${{ secrets.SSH_HOST }}:/home/ubuntu/NuxtMay2021
 
       - name: Docker refresh containers
-        run: docker kill `docker ps -aq`  && docker-compose up -d
+        run: docker-compose up -d --build
