@@ -40,4 +40,4 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
-        run: rsync -avz ./ ubuntu@${{ secrets.SSH_HOST }}:/home/NuxtMay2021
+        run: rsync -avz ./ ubuntu@${{ secrets.SSH_HOST }}:/home/ubuntu/NuxtMay2021
