@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div v-else>
+    <div v-else class="main-content" :class="{show: show_content}">
       <div class="menu">
         <menu-component></menu-component>
       </div>
@@ -31,15 +31,21 @@ export default {
   data: function(){
     return {
       overlay: true,
+      show_content: false,
     }
   },
 
   beforeCreate() {
     this.overlay = true;
+    this.show_content = false;
   },
 
   mounted () {
-    this.overlay = false
+    this.overlay = false;
+    //this.show_content = true;
+
+    let local = this;
+    setTimeout(function(){ local.show_content = true}, 100);
   },
 
   beforeDestroy () {
