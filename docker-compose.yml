@@ -8,6 +8,7 @@ services:
       - "3000:3000"
     command:
       "npm run start"
+    container_name: nuxtmay2021_nuxt_1
 
   nginx:
     image: nginx:latest
@@ -17,7 +18,4 @@ services:
       - ./nginx:/etc/nginx/conf.d
     depends_on:
       - nuxt
-
-
-
-
+    container_name: nuxtmay2021_nginx_1
