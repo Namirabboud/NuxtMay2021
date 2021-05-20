@@ -10,19 +10,16 @@
 
 set -e
 
-declare -a CONTAINERS=("nuxtmay2021_nuxt_1","nuxtmay2021_nginx_1")
+declare -a CONTAINERS=("nuxtmay2021_nuxt_1" "nuxtmay2021_nginx_1")
 
 
 echo "Kill already running containers"
 
 #Check for running container & stop it before starting a new one
-for i in "${CONTAINERS[@]}"
-do
-  if [ $(docker inspect -f '{{.State.Running}}' "$i") = "true" ]; then
-    docker stop "$i"
+for i in "${CONTAINERS[@]}" do
+  if [ $(docker inspect -f '{{.State.Running}}'  ${CONTAINERS[$i]}) = "true" ]; then
+    docker stop ${CONTAINERS[$i]
   fi
-
-  # or do whatever with individual element of the array
 done
 
 echo "Starting the containers:"

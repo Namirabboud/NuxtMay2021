@@ -43,4 +43,4 @@ jobs:
         run: rsync -avz ./ ubuntu@${{ secrets.SSH_HOST }}:/home/ubuntu/NuxtMay2021
 
       - name: Docker refresh containers
-        run: ./deploy_app.sh
+        run: source deploy_app.sh
