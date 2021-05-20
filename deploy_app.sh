@@ -11,7 +11,6 @@
 set -e
 
 declare -a CONTAINERS=("nuxtmay2021_nuxt_1" "nuxtmay2021_nginx_1")
-declare DIR='/home/ubuntu/NuxtMay2021'
 
 echo "Kill already running containers"
 
@@ -26,6 +25,6 @@ done
 
 echo "Starting the containers:"
 
-cd DIR
+cd /home/ubuntu/NuxtMay2021
 docker-compose up -d --build --force-recreate
 docker ps -a
