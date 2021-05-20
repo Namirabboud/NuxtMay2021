@@ -20,7 +20,7 @@ for i in "${CONTAINERS[@]}"
 do
   echo "$i"
   if [ $(docker inspect -f '{{.State.Running}}'  "$i") = "true" ]; then
-    docker stop "$i"
+    docker kill "$i"
   fi
 done
 
