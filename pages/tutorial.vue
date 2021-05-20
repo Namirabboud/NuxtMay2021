@@ -27,12 +27,6 @@
 
     </v-row>
 
-    <v-row class="mt-10">
-      <div class="col-12">
-        3 - Third Only To Check if CI/CD Works
-      </div>
-
-    </v-row>
 
 
   </v-container>
