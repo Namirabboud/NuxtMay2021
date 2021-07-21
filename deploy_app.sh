@@ -8,21 +8,6 @@
 #
 ########################################
 
-set -e
-
-declare -a CONTAINERS=("nuxtmay2021_nuxt_1" "nuxtmay2021_nginx_1")
-
-echo "Kill already running containers"
-
-#Check for running container & stop it before starting a new one
-for i in "${CONTAINERS[@]}"
-do
-  echo "$i"
-  if [ $(docker inspect -f '{{.State.Running}}'  "$i") = "true" ]; then
-    docker kill "$i"
-  fi
-done
-
 echo "Starting the containers:"
 
 cd /home/ubuntu/NuxtMay2021

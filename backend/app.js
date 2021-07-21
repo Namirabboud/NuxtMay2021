@@ -31,7 +31,7 @@ app.post('/export-pdf', (req, res) => {
     }
   };
 
-  client.convertUrl('http://localhost:3000/resume', callbacks)
+  client.convertUrl('http://3.129.128.9/resume', callbacks)
 });
 
 
