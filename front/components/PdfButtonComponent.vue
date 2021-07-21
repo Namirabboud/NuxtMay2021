@@ -3,7 +3,7 @@
     <v-btn
       elevation="2"
       color="yellow darken-3"
-      @click="generatePDF()"
+      @click="generatePDFFromServerSide()"
     >Download Resume As PDF</v-btn>
   </div>
 </template>
@@ -22,8 +22,39 @@ export default {
   },
 
   methods:{
+
+    generatePDFFromServerSide(){
+
+      let element = document.getElementById('resume-page').innerHTML;
+
+      this.$store.dispatch('server/transformHtmlToPDF', {
+        html: element
+      }).then(response => {
+
+        const blob = new Blob(
+          [response.data])
+        const aEle = document.createElement('a');     // Create a label
+        const href = window.URL.createObjectURL(blob);       // Create downloaded link
+        aEle.href = href;
+        aEle.download = this.currentDate()+'_resume.pdf';  // File name after download
+        document.body.appendChild(aEle);
+        aEle.click();     // Click to download
+        document.body.removeChild(aEle); // Download complete remove element
+        window.URL.revokeObjectURL(href) // Release blob object
+
+      }).catch(err => {
+        console.log(err);
+      });
+    },
+
+    currentDate() {
+      const current = new Date();
+      const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+      return date;
+    },
+
+
     generatePDF(){
-      const doc = new jsPDF('l', 'mm','a4');
       /** WITH CSS */
       let element = document.getElementById('resume-page');
       let width= element.style.width;
