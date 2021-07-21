@@ -5,7 +5,7 @@ RUN apt-get update
 ENV APP_ROOT /src
 
 WORKDIR ${APP_ROOT}
-COPY .. ${APP_ROOT}
+COPY . .
 
 RUN npm ci
 RUN npm run build
