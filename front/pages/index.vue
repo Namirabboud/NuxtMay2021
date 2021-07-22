@@ -18,6 +18,7 @@
     </v-row>
 
     <div class="row justify-content-center mx-0">
+
       <div class="col-3 bg-grey pb-6 d-print-none ">
       </div>
 
