@@ -11,7 +11,7 @@
     </div>
 
     <div v-else class="main-content" :class="{show: show_content}">
-      <div class="menu">
+      <div class="menu d-print-none">
         <menu-component></menu-component>
       </div>
 

@@ -8,7 +8,7 @@
       </div>
 
       <div class="col-9 pl-6 pt-6">
-        <div class="d-flex justify-end" data-html2canvas-ignore="true">
+        <div class="d-flex justify-end d-print-none" data-html2canvas-ignore="true">
           <PdfButtonComponent></PdfButtonComponent>
         </div>
         <h2>Namir</h2>

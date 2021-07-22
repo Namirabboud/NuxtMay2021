@@ -21,7 +21,6 @@ client.setNoMargins(true);
 
 app.post('/export-pdf', (req, res) => {
 
-
   var callbacks = pdfcrowd.sendPdfInHttpResponse(res,"HelloWorld.pdf",'attachment');
 
   // set custom error callback
@@ -33,7 +32,10 @@ app.post('/export-pdf', (req, res) => {
     }
   };
 
-  client.convertUrl('http://3.129.128.9/resume', callbacks)
+  client.convertUrl('http://3.129.128.9', callbacks)
+
+  //client.convertString(req.body.html,callbacks)
+
 });
 
 
