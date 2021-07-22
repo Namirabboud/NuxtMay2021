@@ -2,10 +2,14 @@
   <div id="resume-page">
     <v-row class="justify-content-center mx-0 vertical-align-wrapper">
       <div class="col-3 text-center bg-grey pt-6 d-print-none">
-        <img class="resume-profile-picture rounded-circle" src="~/assets/images/pp.jpeg">
+        <div class="col-12 col-md-8 mx-auto">
+          <img class="w-full rounded-circle" src="~/assets/images/pp.jpeg">
+        </div>
       </div>
 
       <div class="col-9 pl-6 pt-6">
+        <div class="d-flex justify-end d-print-none" data-html2canvas-ignore="true">
+        </div>
         <h2>Namir</h2>
         <h1>Abboud</h1>
         <h5 class="text-secondary">FullStack Developer</h5>
@@ -13,13 +17,14 @@
     </v-row>
 
     <div class="row justify-content-center mx-0">
+
       <div class="col-3 bg-grey pb-6 d-print-none ">
       </div>
 
       <div class="col-9 px-6 pb-6 ">
         <div class="w-100  border-color-light border-top-1 ">
           <div class="row pt-3">
-            <div class="col-3">
+            <div class="col-6 col-md-3">
               <div class="d-inline-block">
                 <b>Location</b>
               </div>
@@ -30,7 +35,7 @@
 
             </div>
 
-            <div class="col-3">
+            <div class="col-6 col-md-3">
               <div class="d-inline-block">
                 <b>Phone</b>
               </div>
@@ -41,7 +46,7 @@
 
             </div>
 
-            <div class="col-3">
+            <div class="col-6 col-md-3">
               <div class="d-inline-block">
                 <b>Email</b>
               </div>
@@ -51,7 +56,7 @@
               </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-6 col-md-3">
               <div class="d-inline-block">
                 <b>Github</b>
               </div>
@@ -232,9 +237,10 @@
 
       <div class="col-9 pl-6 py-14">
         <div class="row justify-content-between pb-10">
-          <div class="col-md-6">
+
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>90%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>90%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>Laravel</b></h4>
               </div>
@@ -247,9 +253,9 @@
             ></v-progress-linear>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>90%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>90%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>Vue.js</b></h4>
               </div>
@@ -266,9 +272,9 @@
         </div>
 
         <div class="row justify-content-between py-10">
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>90%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>90%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>CSS</b></h4>
               </div>
@@ -281,9 +287,9 @@
             ></v-progress-linear>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>60%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>60%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>DJANGO</b></h4>
               </div>
@@ -301,9 +307,9 @@
 
 
         <div class="row justify-content-between py-10">
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>75%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>75%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>GNU/Linux</b></h4>
               </div>
@@ -316,9 +322,9 @@
             ></v-progress-linear>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>70%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>70%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>DOCKER</b></h4>
               </div>
@@ -333,9 +339,9 @@
         </div>
 
         <div class="row justify-content-between py-10">
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>60%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>60%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>Node.js</b></h4>
               </div>
@@ -348,9 +354,9 @@
             ></v-progress-linear>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>80%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>80%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>Wordpress</b></h4>
               </div>
@@ -365,9 +371,9 @@
         </div>
 
         <div class="row justify-content-between py-10">
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>70%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>70%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>PostgreSQL</b></h4>
               </div>
@@ -380,9 +386,9 @@
             ></v-progress-linear>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-1"><b>75%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>75%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>MySQL</b></h4>
               </div>
@@ -633,12 +639,48 @@
 </template>
 
 <script>
-export default {
-  name: "resume",
-  layout: 'withoutMenu',
-}
+export default {}
 </script>
 
-<style scoped>
+<!--
+<style>
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
 </style>
+-->

@@ -32,7 +32,7 @@ app.post('/export-pdf', (req, res) => {
     }
   };
 
-  client.convertUrl('http://3.129.128.9', callbacks)
+  client.convertUrl('http://3.129.128.9/resume', callbacks)
 
   //client.convertString(req.body.html,callbacks)
 
