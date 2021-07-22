@@ -15,7 +15,9 @@ app.use(bodyParser.json());
 
 // create the API client instance
 const client = new pdfcrowd.HtmlToPdfClient("namirabboud", "e206de76d3a089f723485382ad3dcdd0");
-
+client.setPageSize("Letter");
+client.setOrientation("landscape");
+client.setNoMargins(true);
 
 app.post('/export-pdf', (req, res) => {
 

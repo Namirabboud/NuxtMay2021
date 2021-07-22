@@ -53,7 +53,7 @@ export default {
     '/api/v1': { target: 'http://3.129.128.9:5000/', pathRewrite: {'^/api/v1': ''} }
   },
 
-  
+
   //ssr: false,
   loading: {
     color: 'DodgerBlue',
