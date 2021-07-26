@@ -47,6 +47,7 @@
 
             </div>
 
+
             <div class="col-6 col-md-3">
               <div class="d-inline-block">
                 <b>Email</b>
@@ -68,6 +69,22 @@
                 </a>
               </div>
             </div>
+
+            <div class="col-6 col-md-3">
+              <div class="d-inline-block">
+                <b>Website</b>
+              </div>
+
+              <div class="clearfix">
+                <a href="http://3.129.128.9/">
+                  http://3.129.128.9/
+
+                </a>
+              </div>
+
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -82,7 +99,7 @@
 
       <div class="col-9 pl-6 py-14">
         Hardworking individual who is passionate about learning new skills.
-        Finds pleasure in communicating with teammates to find solutions,
+        Finds pleasure in communication to find solutions,
         and addicted to solving problems. Seeking a suitable company that
         focuses on personal development and growth.
       </div>
@@ -112,6 +129,7 @@
                 <li>Creating composer packages, including a CMS package, built to ease the creation of generated CMS Pages.(Always in progress). </li>
                 <li>Integrating Vue.js in laravel to build dynamic layouts.</li>
                 <li>Strong Knowledge and use of the Repository Pattern.</li>
+                <li>Livewire, Alpine JS.</li>
                 <li>Background tasks and queues using Supervisor.</li>
                 <li>Building Websites and Mobile App Api's.</li>
               </ul>
@@ -159,6 +177,8 @@
                 <li>Event Bus.</li>
                 <li>Vuex state management.</li>
                 <li>Vuetify UI.</li>
+                <li>Nuxt.js.</li>
+
               </ul>
             </div>
           </div>
@@ -225,6 +245,28 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            <div class="d-flex">
+              <div class="px-0 color-primary expertise-nb"><b>07</b></div>
+              <div class=" px-0">
+                <h4><b>Project Management</b></h4>
+              </div>
+            </div>
+            <div class="expertise-body">
+              Besides development, I am also a good communicator.
+              Previously in my work:
+              <ul class="pl-4 pt-2">
+                <li>I was responsible for the communication with my clients.</li>
+                <li>Understanding the clients request, and coming up with new ideas that suites the clients requests.</li>
+                <li>Communication with colleagues to deliver.</li>
+                <li>Follow up.</li>
+                <li>Support.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -342,14 +384,14 @@
         <div class="row justify-content-between py-10">
           <div class="col-6">
             <div class="d-flex">
-              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>60%</b></div>
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>70%</b></div>
               <div class=" px-0 col-11">
                 <h4><b>Node.js</b></h4>
               </div>
             </div>
             <v-progress-linear
               color="yellow darken-3"
-              value="60%"
+              value="70%"
               height="10"
               background-color="grey lighten-3"
             ></v-progress-linear>
@@ -402,6 +444,24 @@
             ></v-progress-linear>
           </div>
         </div>
+
+        <div class="row justify-content-between py-10">
+          <div class="col-6">
+            <div class="d-flex">
+              <div class="px-0 yellow--text text--darken-3 col-2 col-md-1"><b>90%</b></div>
+              <div class=" px-0 col-11">
+                <h4><b>Project Management</b></h4>
+              </div>
+            </div>
+            <v-progress-linear
+              color="yellow darken-3"
+              value="70%"
+              height="10"
+              background-color="grey lighten-3"
+            ></v-progress-linear>
+          </div>
+        </div>
+
       </div>
 
 
