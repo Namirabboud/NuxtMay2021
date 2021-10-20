@@ -37,7 +37,7 @@ services:
         max-file: "3"
     image: nginx:latest
     ports:
-      - "81:80"
+      - "80:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d
     depends_on:
