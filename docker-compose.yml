@@ -3,6 +3,10 @@ version: "3"
 services:
 
   nuxt:
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
     build:
       context: ./front/
     restart: always
@@ -13,6 +17,10 @@ services:
     container_name: nuxtmay2021_nuxt_1
 
   node:
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
     build:
       context: ./backend/
     restart: always
@@ -23,9 +31,13 @@ services:
     container_name: nuxtmay2021_node_1
 
   nginx:
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
     image: nginx:latest
     ports:
-      - "80:80"
+      - "81:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d
     depends_on:
