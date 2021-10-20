@@ -9,7 +9,9 @@
 
       <div class="col-9 pl-6 pt-6">
         <div class="d-flex justify-end d-print-none" data-html2canvas-ignore="true">
+          <!--
           <PdfButtonComponent></PdfButtonComponent>
+          -->
         </div>
         <h2>Namir</h2>
         <h1>Abboud</h1>
@@ -108,7 +110,7 @@
     <div class="row  mx-0">
       <div class="col-3 text-right bg-grey py-14 pr-6 d-print-none">
         <h4>EXPERTISE</h4>
-        <label>Batman would be jealous.</label>
+        <label>Batman would be jealous. </label>
       </div>
 
       <div class="col-9 pl-6 py-14">
